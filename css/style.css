@@ -111,7 +111,7 @@ header .home {
 .container-bg {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 64px;
   padding-top: 130px;
   background-image: url(../img/bg-top.png), url(../img/106.jpg);
   background-repeat: no-repeat, no-repeat;
@@ -183,4 +183,76 @@ header .home {
   display: block;
   padding: 25px 0 23px 42px;
 }
+
+/* SLIDER */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+}
+
+.slider-img {
+  display: flex;
+}
+
+.slider-img img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  z-index: -1;
+}
+
+.slider-img input {
+  display: none;
+}
+
+.lableslide {
+  display: flex;
+  justify-content: center;
+  padding: 13px 0;
+  background: url(../img/149.jpg);
+}
+
+.lableslide .lable-page {
+  height: 20px;
+  width: 20px;
+
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.lableslide .lable-page:hover {
+  height: 20px;
+  width: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.lableslide label {
+  display: block;
+  height: 12px;
+  width: 12px;
+  background: white;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+#img1:checked ~.imgSlide1 {
+  margin-left: -100%;
+}
+
+#img2:checked ~.imgSlide2 {
+  margin-left: -200%;
+}
+
+#img3:checked ~.imgSlide3 {
+  margin-left: -300%;
+}
+
+#img4:checked ~.imgSlide4 {
+  margin-left: -400%;
+}
+
 
