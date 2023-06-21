@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Noto+Sans+Display:wght@400;500;700&display=swap");
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-.container {
+.top {
   position: relative;
   top: 10px;
   display: block;
@@ -15,13 +16,12 @@ body {
 
 header {
   position: fixed;
-  background-image: url(../img/149.jpg);
+  background: url(../img/149.jpg) repeat-x left top;
   left: 0;
   top: 0;
   width: 100%;
   height: 130px;
   z-index: 20;
-
 }
 
 header .logo {
@@ -35,19 +35,12 @@ header .logo {
 header .home {
   color: white;
   font-size: 15px;
-  background-color: #f2b819 ;
+  background-color: #f18720;
   padding: 10px;
   border-radius: 50%;
   margin-right: 16px;
   vertical-align: middle;
 }
-
-/* .navigation__bar {
-  position: relative;
-  width: auto;  
-  height: auto;
-  text-align: right;
-} */
 
 .navigation__bar {
   position: absolute;
@@ -65,7 +58,7 @@ header .home {
   vertical-align: middle;
 }
 
-.nav ul{
+.nav ul {
   position: relative;
   background-color: #e00d7a;
   list-style: none;
@@ -73,7 +66,7 @@ header .home {
   border-radius: 30px;
   margin: 0;
   padding: 1px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav li {
@@ -101,3 +94,93 @@ header .home {
   font-size: 15px;
   color: white;
 }
+
+/* CONTAINER */
+.container {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.container-bg {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 130px;
+  background-image: url(../img/bg-top.png), url(../img/106.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center bottom;
+  overflow: hidden;
+}
+
+/* REGISTER */
+.register__content {
+  position: relative;
+  width: 100%;
+  height: 63px;
+  background: url(../img/107.png) repeat center top;
+  border-bottom: 1px solid #fff;
+}
+
+.register__wrap {
+  width: 90%;
+  margin: 0 auto;
+  z-index: 19;
+  position: relative;
+}
+
+.register__wrap ul {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0px -30px;
+} 
+
+.register__wrap ul li {
+  float: left;
+  margin-right: 30px;
+  list-style: none;
+}
+
+.register__wrap ul li a {
+  color: #e00d7a;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.hotline {
+  float: right;
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  color: #f37520;
+  background: url(../img/110.png) no-repeat left 7px;
+  padding: 15px 0 19px 58px;
+  text-decoration: none;
+  color: #f37520;
+}
+
+.btn__register {
+  background: url(../img/108.png) no-repeat left 1px;
+}
+
+.btn__register a {
+  display: block;
+  padding: 25px 0 23px 71px;
+}
+
+.btn__login {
+  background: url(../img/109.png) no-repeat left;
+}
+
+.btn__login a {
+  display: block;
+  padding: 25px 0 23px 42px;
+}
+
