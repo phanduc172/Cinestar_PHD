@@ -219,7 +219,7 @@ header .home {
   background: url(../img/149.jpg);
 }
 
-.lableslide .lable-page {
+.lableslide .lable__page {
   height: 20px;
   width: 20px;
   border: 1px solid transparent;
@@ -227,7 +227,7 @@ header .home {
   margin: 0 10px;
 }
 
-.lableslide .lable-page:hover {
+.lableslide .lable__page:hover {
   height: 20px;
   width: 20px;
   border: 1px solid white;
