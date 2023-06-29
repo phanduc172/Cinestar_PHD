@@ -293,6 +293,29 @@ header .home {
   padding-left: 150px;
 }
 
+.block__title h2 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #e00d7a;
+  line-height: 32px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.block__title:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: -20px;
+  width: 114px;
+  height: 130px;
+  background: url(../img/icon-ticket.png) no-repeat center center;
+}
+
 .cart__wrapper .block__list {
   display: inline-block;
     vertical-align: middle;
@@ -302,6 +325,50 @@ header .home {
     text-align: center;
 }
 
-.block__list .dropdown {
+.block__list .select__list {
+  position: relative;
   display: inline-block;
+  margin: 0 5px 12px 5px;
+}
+
+.select__list a {
+  color: white;
+  text-align: left;
+}
+
+.dropdown__toggle {
+  height: 48px;
+  width: 290px;
+}
+
+.select__list .btn__box {
+  background: #464646;
+  padding: 10px 15px;
+  border-radius: 0 30px 30px 30px;
+}
+
+.select__list .btn__box:hover {
+  background: #e00d7a;
+  color: white;
+}
+
+.btn__box::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.dropdown-menu .dropdown-item {
+  background: white;
+  color: black;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background: #e00d7a;;
+  color: black;
 }
