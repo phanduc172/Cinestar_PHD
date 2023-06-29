@@ -190,13 +190,14 @@ header .home {
 }
 
 /* SLIDER */
-.slider-container {
+/* .slider-container {
   width: 100%;
   overflow: hidden;
   height: 275px;
 }
 
 .slider-img {
+  position: relative;
   display: flex;
 }
 
@@ -258,7 +259,7 @@ header .home {
 
 #img4:checked ~.imgSlide4 {
   margin-left: -400%;
-}
+} */
 
 
 /* CART */
