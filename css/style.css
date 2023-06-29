@@ -193,7 +193,7 @@ header .home {
 .slider-container {
   width: 100%;
   overflow: hidden;
-  height: 250px;
+  height: 275px;
 }
 
 .slider-img {
@@ -215,7 +215,7 @@ header .home {
 .lableslide {
   display: flex;
   justify-content: center;
-  padding: 15px 0;
+  padding: 14px 0;
   background: url(../img/149.jpg);
 }
 
@@ -320,7 +320,7 @@ header .home {
     vertical-align: middle;
     width: 70%;
     margin-top: 12px;
-    max-width: 910px;
+    max-width: 900px;
     text-align: center;
 }
 
