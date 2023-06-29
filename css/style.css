@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Noto+Sans+Display:wght@400;500;700&display=swap");
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+html, body {
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
 .top {
@@ -49,7 +48,7 @@ header .home {
   text-align: right;
 }
 
-.nav {
+.nav__bar {
   position: relative;
   padding: 3px;
   border: 1px solid #e00d7a;
@@ -58,7 +57,7 @@ header .home {
   vertical-align: middle;
 }
 
-.nav ul {
+.nav__bar ul {
   position: relative;
   background-color: #e00d7a;
   list-style: none;
@@ -69,34 +68,36 @@ header .home {
   font-family: "Montserrat", sans-serif;
 }
 
-.nav li {
+.nav__bar li {
   float: left;
   height: 40px;
   padding: 0 10px;
 }
 
-.nav li:last-child {
+.nav__bar li:last-child {
   padding-right: 20px;
 }
 
-.nav li a {
+.nav__bar li a {
   padding: 0 5px;
   text-decoration: none;
 }
 
-.nav li:hover {
+.nav__bar li:hover {
   background: #f37520;
   cursor: pointer;
   transition: all 0.5s;
 }
 
-.nav li h1 {
+.nav__bar li h1 {
   font-size: 15px;
   color: white;
+  position: relative;
+  top: 10px;
 }
 
 /* CONTAINER */
-.container {
+/* .container {
   position: relative;
   left: 0;
   top: 0;
@@ -106,9 +107,9 @@ header .home {
   padding: 0;
   overflow: hidden;
   transition: all 0.3s ease 0s;
-}
+} */
 
-.container-bg {
+/* .container-bg {
   position: relative;
   width: 100%;
   height: 64px;
@@ -117,13 +118,17 @@ header .home {
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center bottom;
   overflow: hidden;
-}
+} */
 
 /* REGISTER */
+.register__top {
+  margin-top: 130px;
+}
+
 .register__content {
   position: relative;
   width: 100%;
-  height: 63px;
+  height: 64px;
   background: url(../img/107.png) repeat center top;
   border-bottom: 1px solid #fff;
 }
@@ -161,7 +166,7 @@ header .home {
   font-size: 30px;
   color: #f37520;
   background: url(../img/110.png) no-repeat left 7px;
-  padding: 15px 0 19px 58px;
+  padding: 10px 0 9px 64px;
   text-decoration: none;
   color: #f37520;
 }
@@ -188,7 +193,7 @@ header .home {
 .slider-container {
   width: 100%;
   overflow: hidden;
-  height: 300px;
+  height: 290px;
 }
 
 .slider-img {
@@ -217,9 +222,9 @@ header .home {
 .lableslide .lable-page {
   height: 20px;
   width: 20px;
-
+  border: 1px solid transparent;
   border-radius: 50%;
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 .lableslide .lable-page:hover {
@@ -227,7 +232,7 @@ header .home {
   width: 20px;
   border: 1px solid white;
   border-radius: 50%;
-  margin: 0 5px;
+  margin: -1px 7px;
 }
 
 .lableslide label {
@@ -236,7 +241,7 @@ header .home {
   width: 12px;
   background: white;
   border-radius: 50%;
-  margin: 4px;
+  margin: 3px 3px;
 }
 
 #img1:checked ~.imgSlide1 {
@@ -256,3 +261,47 @@ header .home {
 }
 
 
+/* CART */
+
+.cart__content {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 5;
+  background-image: url(../img/102.png), url(../img/107.png);
+  background-repeat: repeat-x,repeat;
+  background-position: left top, center top;
+  background-size: contain, contain;
+  -webkit-background-size: contain, contain;
+}
+
+.cart__wrapper {
+  display: block;
+  width: 90%;
+  height: 136px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cart__wrapper .block__title {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  position: relative;
+  vertical-align: middle;
+  line-height: 144px;
+  padding-left: 150px;
+}
+
+.cart__wrapper .block__list {
+  display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    margin-top: 12px;
+    max-width: 910px;
+    text-align: center;
+}
+
+.block__list .dropdown {
+  display: inline-block;
+}
