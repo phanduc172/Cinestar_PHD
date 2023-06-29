@@ -193,7 +193,7 @@ header .home {
 .slider-container {
   width: 100%;
   overflow: hidden;
-  height: 290px;
+  height: 250px;
 }
 
 .slider-img {
@@ -215,7 +215,7 @@ header .home {
 .lableslide {
   display: flex;
   justify-content: center;
-  padding: 13px 0;
+  padding: 15px 0;
   background: url(../img/149.jpg);
 }
 
@@ -262,7 +262,6 @@ header .home {
 
 
 /* CART */
-
 .cart__content {
   position: relative;
   width: 100%;
@@ -369,6 +368,110 @@ header .home {
 }
 
 .dropdown-menu .dropdown-item:hover {
-  background: #e00d7a;;
+  background: #e00d7a;
   color: black;
 }
+
+/* CINEMA SYSTEM */
+.content__page {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url(../img/bg-top.png), url(../img/106.jpg);
+}
+
+.cinema__list__content {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.cinema__list__wrap {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.cinema__list {
+  width: 30%;
+  display: inline-block;
+}
+
+.cinema__list h2 {
+  font-weight: bold;
+  color: white;
+  font-size: 28px;
+}
+
+.cinema__list .location__box {
+  width: 220px;
+  height: 44px;
+  margin: 10px 0px;
+  border: #e00d7a solid 1px;
+  border-radius: 0 30px 30px 30px;
+  background: black;
+  color: white;
+  padding: 0 20px;
+  font-weight: 500;
+}
+
+.cinema__list .loc__item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+}
+
+.cinema__address {
+  width: 68%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.cinema__address .cinema__info{
+  display: block;
+}
+
+.cinema__info img {
+  width: 190px;
+  height: auto;
+}
+
+.cinema__info .ci__address {
+  position: relative;
+  margin-bottom: 8px;
+  padding-left: 80px;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+}
+
+.cinema__info .ci__name {
+  position: relative;
+  font-weight: bold;
+  font-size: 35px;
+  color: #fff;
+  top: 28px;
+  left: 5px;
+}
+
+.tel {
+  position: relative;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  bottom: 10px;
+  padding-left: 80px;
+}
+
+.tel a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
